@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<article class="container my-4">
+    <h1>{{ page.title }}</h1>
+    
+    <h6 class="card-subtitle">in {% for category in page.categories %}{{ category }} {% endfor %}</h6>
+    
+    <div class="date">
+        Scritto il {{ page.date | date: "%d/%m/%Y" }} da {{ page.author }}
+    </div>
+    
+    <div>{% for tag in page.tags %}<a class="card-tag mr-2" href="">{{ tag }}</a>{% endfor %}</div>
+    <!--{{ site.baseurl }}/tag/{{ tag }}-->
+  <div class="entry">
+    {{ content }}
+  </div>
+
+
+  {% include disqus.html %}
+</article>
