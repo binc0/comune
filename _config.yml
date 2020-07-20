@@ -4,9 +4,9 @@
 environment: "production"
 
 
-title: Arpa FVG
+title: Spilimbergo
 
-description: 5G e Onde Elettromagnetiche
+description: La città del mosaico
 
 #Must add tags
 
@@ -33,7 +33,7 @@ url: "https://binc0.github.io"
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "/5g-arpa-fvg"
+baseurl: "/comune
 
 #
 # !! You don't need to change any of the configuration flags below !!
