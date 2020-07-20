@@ -7,15 +7,15 @@ social-card: /assets/images/favicons/social-card.png
 
 ## Site name
 name:
-  it: "Arpa FVG"
+  it: "Spilimbergo"
 
 ## Site description
 description:
-  it: "5G e Onde Elettromagnetiche"
+  it: "La città del mosaico"
 
 ## Site author
 author:
-  it: "Arpa FVG"
+  it: "Comune di Spilimbergo"
 
 ## Owner
 
@@ -30,7 +30,7 @@ social-links:
     it:
         wifi:
             name: "wifi"
-            url: "https://binc0.github.io/5g-arpa-fvg/feed"
+            url: "https://binc0.github.io/comune/feed"
             
             
 ## Labels
