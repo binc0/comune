@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 5G e Campi Elettromagnetici
-description: Al via il progetto "5G e Campi elettromagnetici
+title: Home
+description:
 lang: it
 ref: homepage
 permalink: /
