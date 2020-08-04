@@ -10,7 +10,7 @@ order: 1
 
 <!--{% include hero.html %}-->
 
-{% include home.html %}
+{% include homepage.html %}
 
 <main class="container my-4" markdown="1">
 
