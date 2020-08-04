@@ -18,7 +18,7 @@ order: 1
 
 {% include siti-tematici.html %}
 
-<main class="container my-4" markdown="1">
+<main class="container my-4" markdown="1">-
 
 {% include posts.html %}
 
