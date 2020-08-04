@@ -12,6 +12,8 @@ order: 1
 
 {% include homepage.html %}
 
+{% include siti-tematici.html %}
+
 <main class="container my-4" markdown="1">
 
 {% include posts.html %}
