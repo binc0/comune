@@ -10,7 +10,7 @@ order: 1
 
 {% include hero.html %}
 
-{% include home-novità.html %}
+{% include home-novita.html %}
 
 {% include home-evidenza.html %}
 
