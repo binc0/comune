@@ -8,7 +8,7 @@ permalink: /
 order: 1
 ---
 
-<!--{% include hero.html %}-->
+{% include hero.html %}
 
 {% include homepage.html %}
 
