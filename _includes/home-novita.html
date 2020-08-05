@@ -4,6 +4,7 @@
 							<div class="widget">
 								<div> 
 									<div class="row row-eq-height">
+                                        {% for post in posts %}
 										<div class="col-md-4">
 											<article class="scheda scheda-round">
 												<div class="scheda-icona-small">
@@ -11,12 +12,12 @@
 														<svg class="icon">
 															<use xlink:href="{{ site.baseurl }}/assets/img/ponmetroca.svg#ca-today"></use>
 														</svg>
-														Comunicati stampa
+														{{ category }}
 													</a>
 												</div>
 												<div class="scheda-testo-small">
-													<h4><a href="#" title="Vai alla pagina: L'ITS Città Metropolitana ha avviato una procedura di selezione">L'ITS Città Metropolitana ha avviato una procedura di selezione</a></h4>
-													<p>La società ricerca quattro Ingegneri e un Addetto amministrativo. Scadenza delle domande prevista per il 21 settembre.</p>
+													<h4><a href="#" title="Vai alla pagina: L'ITS Città Metropolitana ha avviato una procedura di selezione">{{ post.title }}</a></h4>
+													<p>{{ post.excerpt }}</p>
 												</div>
 												<div class="scheda-footer">
 													<a href="novita.html" title="Vai alla pagina: Novità" class="tutte">Tutte le novità
@@ -25,6 +26,7 @@
 												</div>
 											</article>
 										</div>
+                                        {% endfor %}
 										<div class="col-md-4">
 											<article class="scheda scheda-round">
 												<div class="scheda-icona-small">
@@ -70,3 +72,5 @@
 						</div>
 	                </div>
 				</section>
+
+
