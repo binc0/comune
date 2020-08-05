@@ -1,12 +1,10 @@
-{% assign posts = site.posts | where: "lang", page.lang %}
-
 <section id="home-novita">
                     <div class="container">
                         <div class="mt-88n">
 							<div class="widget">
 								<div> 
 									<div class="row row-eq-height">
-                                        {% for post.index =="2" %}
+                                        {% for post in posts %}
 										<div class="col-md-4">
 											<article class="scheda scheda-round">
 												<div class="scheda-icona-small">
