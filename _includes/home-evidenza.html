@@ -15,7 +15,7 @@
                   <use xlink:href="/{{ site.baseurl }}/assets//bootstrap-italia/dist/svg/sprite.svg#it-calendar"></use>
                 </svg>
                 <a class="category" href="/notizie">Notizie</a>
-                <span class="data">{{ post.date }}8</span>
+                <span class="data">{% include date.html date=post.date %}</span>
               </div>
               <h1 class="h4 card-title">{{ post.title }}</h1>
               <p class="card-text">{{ post.excerpt }}</p>
