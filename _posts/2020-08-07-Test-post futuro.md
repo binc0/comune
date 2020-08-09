@@ -5,7 +5,7 @@ title: Test post futuro
 lang: it
 excerpt: Questa è una breve descrizione dell'articolo scritto.
 ref: test-futuro
-categories: [notizie]
+category: [notizie]
 tags: [Test]
 ---
 
