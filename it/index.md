@@ -12,6 +12,8 @@ order: 1
 
 {% include home-novita.html %}
 
+{% include meteo.html %}
+
 {% include argomenti-evidenza.html %}
 
 {% include siti-tematici.html %}
