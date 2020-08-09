@@ -28,9 +28,25 @@ owner:
 ## Social
 social-links:
     it:
+        facebook:
+            name: "facebook"
+            url: "https://binc0.github.io/comune/feed"
+        twitter:
+            name: "twitter"
+            url: "https://binc0.github.io/comune/feed"
+        youtube:
+            name: "youtube"
+            url: "https://binc0.github.io/comune/feed"
+        telegram:
+            name: "telegram"
+            url: "https://binc0.github.io/comune/feed"
+        whatsapp:
+            name: "whatsapp"
+            url: "https://binc0.github.io/comune/feed"
         wifi:
             name: "wifi"
             url: "https://binc0.github.io/comune/feed"
+            
             
             
 ## Labels
