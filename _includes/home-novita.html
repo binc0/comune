@@ -1,7 +1,9 @@
 {% assign posts = site.posts | where: "lang", page.lang %}
-<section id="home-novita">
-                    <div class="container">
-                        <div class="row">
+
+<section id="calendario">
+    <div class="section section-muted pb-5 pt-0">
+      <div class="container">
+        <div class="row">
           <div class="card-wrapper card-overlapping card-teaser-wrapper card-teaser-wrapper-equal card-teaser-block-3">
               {% for post in posts limit:1 | where: "category", "giunta-consiglio" %}
             <div class="card card-teaser no-after rounded shadow">
@@ -63,7 +65,222 @@
               </a>
             </div>
               {% endfor %}
+          
+            <div class="card card-teaser card-teaser-image card-flex no-after rounded shadow">
+              <div class="card-image-wrapper with-read-more pb-5">
+                <div class="card-body p-4">
+                  <div class="category-top">
+                    <svg class="icon">
+                      <use xlink:href="/design-comuni-prototipi/assets/bootstrap-italia/dist/svg/sprite.svg#it-pa"></use>
+                    </svg>
+                    <a class="category" href="#">Giunta e consiglio</a>
+                  </div>
+                  <p class="card-title font-weight-semibold">Mario Rossi</p>
+                  <p class="card-text">Sindaco della città</p>
+                </div>
+                <div class="card-image card-image-rounded pb-5">
+                  <img src="https://picsum.photos/150/200" alt="Immagine di esempio">
+                </div>
+              </div>
+
+              <a class="read-more pl-4" href="/design-comuni-prototipi/esempi/bootstrap-italia/template-amministrazione.html">
+                <span class="text">Tutta l'amministrazione</span>
+                <svg class="icon">
+                  <use xlink:href="/design-comuni-prototipi/assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="card card-teaser no-after rounded shadow">
+              <div class="card-body pb-5">
+                <div class="category-top">
+                  <svg class="icon">
+                    <use xlink:href="/design-comuni-prototipi/assets/bootstrap-italia/dist/svg/sprite.svg#it-pa"></use>
+                  </svg>
+                  <a class="category" href="#">Pagamenti</a>
+                </div>
+                <p class="card-title font-weight-semibold">TARI - Tassa dei rifiuti</p>
+                <p class="card-text">La TARI è in scadenza, controlla il tuo pagamento nella tua area personale.</p>
+              </div>
+              <a class="read-more" href="#">
+                <span class="text">Tutti i servizi</span>
+                <svg class="icon">
+                  <use xlink:href="/design-comuni-prototipi/assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="card card-teaser no-after rounded shadow">
+              <div class="card-body pb-5">
+                <div class="category-top">
+                  <svg class="icon">
+                    <use xlink:href="/design-comuni-prototipi/assets/bootstrap-italia/dist/svg/sprite.svg#it-pa"></use>
+                  </svg>
+                  <a class="category" href="#">Bandi</a>
+                </div>
+                <p class="card-title font-weight-semibold">Come partecipare ad un bando</p>
+                <p class="card-text">Tutte le informazioni e i documenti necessari per partecipare.</p>
+              </div>
+              <a class="read-more" href="/design-comuni-prototipi/esempi/bootstrap-italia/template-documenti.html">
+                <span class="text">Tutti i documenti</span>
+                <svg class="icon">
+                  <use xlink:href="/design-comuni-prototipi/assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
-	                </div>
-				</section>
+        <div class="row row-title pt-5 pb-3">
+          <h2>Calendario</h2>
+          <div>
+            <button type="button" class="mt-1 btn btn-secondary btn-sm">Tutto</button>
+            <button type="button" class="mt-1 btn btn-outline-secondary btn-sm btn-icon">
+              <svg class="icon">
+                <use xlink:href="/design-comuni-prototipi/assets/bootstrap-italia/dist/svg/sprite.svg#it-pa"></use>
+              </svg>
+              <span>Consigli comunali</span>
+            </button>
+            <button type="button" class="mt-1 btn btn-outline-secondary btn-sm btn-icon">
+              <svg class="icon">
+                <use xlink:href="/design-comuni-prototipi/assets/bootstrap-italia/dist/svg/sprite.svg#it-calendar"></use>
+              </svg>
+              <span>Eventi</span>
+            </button>
+            <button type="button" class="mt-1 btn btn-outline-secondary btn-sm btn-icon">
+              <svg class="icon">
+                <use xlink:href="/design-comuni-prototipi/assets/bootstrap-italia/dist/svg/sprite.svg#it-settings"></use>
+              </svg>
+              Scadenze
+            </button>
+          </div>
+        </div>
+
+        <div class="row row-calendar">
+          <div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols it-calendar-wrapper">
+            <div class="it-header-block">
+              <div class="it-header-block-title">
+                <h4 class="mb-0 text-center">Settembre 2019</h4>
+              </div>
+            </div>
+            <div class="it-carousel-all owl-carousel it-card-bg owl-loaded owl-drag">
+              
+              
+              
+              
+              
+              
+              
+              
+              
+            <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 1974px;"><div class="owl-item active" style="width: 219.25px;"><div class="it-single-slide-wrapper">
+                <div class="card-wrapper">
+                  <div class="card card-bg">
+                    <div class="card-body">
+                      <h5 class="card-title">15<span>lun</span></h5>
+                      <p class="card-text"><a href="#">Saldo TASI</a></p>
+                      <p class="card-text"><a href="#">Concerto gratuito piazza XX Settembre</a></p>
+                      <p class="card-text"><a href="#">Convocazione Consiglio Comunale - Prima seduta</a></p>
+                      <p class="card-text"><a href="#">Seconda rata TARI</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div></div><div class="owl-item active" style="width: 219.25px;"><div class="it-single-slide-wrapper">
+                <div class="card-wrapper">
+                  <div class="card card-bg">
+                    <div class="card-body">
+                      <h5 class="card-title">16<span>mar</span></h5>
+                      <p class="card-text"><a href="#">Saldo TASI</a></p>
+                      <p class="card-text"><a href="#">Concerto gratuito piazza XX Settembre</a></p>
+                      <p class="card-text"><a href="#">Convocazione Consiglio Comunale - Prima seduta</a></p>
+                      <p class="card-text"><a href="#">Seconda rata TARI</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div></div><div class="owl-item active" style="width: 219.25px;"><div class="it-single-slide-wrapper">
+                <div class="card-wrapper">
+                  <div class="card card-bg">
+                    <div class="card-body">
+                      <h5 class="card-title">17<span>mer</span></h5>
+                      <p class="card-text"><a href="#">Saldo TASI</a></p>
+                      <p class="card-text"><a href="#">Concerto gratuito piazza XX Settembre</a></p>
+                      <p class="card-text"><a href="#">Convocazione Consiglio Comunale - Prima seduta</a></p>
+                      <p class="card-text"><a href="#">Seconda rata TARI</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div></div><div class="owl-item active" style="width: 219.25px;"><div class="it-single-slide-wrapper">
+                <div class="card-wrapper">
+                  <div class="card card-bg">
+                    <div class="card-body">
+                      <h5 class="card-title">18<span>giov</span></h5>
+                      <p class="card-text"><a href="#">Saldo TASI</a></p>
+                      <p class="card-text"><a href="#">Concerto gratuito piazza XX Settembre</a></p>
+                      <p class="card-text"><a href="#">Convocazione Consiglio Comunale - Prima seduta</a></p>
+                      <p class="card-text"><a href="#">Seconda rata TARI</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div></div><div class="owl-item" style="width: 219.25px;"><div class="it-single-slide-wrapper">
+                <div class="card-wrapper">
+                  <div class="card card-bg">
+                    <div class="card-body">
+                      <h3 class="card-title mb-0">19<span>ven</span></h3>
+                      <p class="card-text"><a href="#">Saldo TASI</a></p>
+                      <p class="card-text"><a href="#">Concerto gratuito piazza XX Settembre</a></p>
+                      <p class="card-text"><a href="#">Convocazione Consiglio Comunale - Prima seduta</a></p>
+                      <p class="card-text"><a href="#">Seconda rata TARI</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div></div><div class="owl-item" style="width: 219.25px;"><div class="it-single-slide-wrapper">
+                <div class="card-wrapper">
+                  <div class="card card-bg">
+                    <div class="card-body">
+                      <h5 class="card-title">20<span>sab</span></h5>
+                      <p class="card-text"><a href="#">Saldo TASI</a></p>
+                      <p class="card-text"><a href="#">Concerto gratuito piazza XX Settembre</a></p>
+                      <p class="card-text"><a href="#">Convocazione Consiglio Comunale - Prima seduta</a></p>
+                      <p class="card-text"><a href="#">Seconda rata TARI</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div></div><div class="owl-item" style="width: 219.25px;"><div class="it-single-slide-wrapper">
+                <div class="card-wrapper">
+                  <div class="card card-bg">
+                    <div class="card-body">
+                      <h5 class="card-title">21<span>dom</span></h5>
+                      <p class="card-text"><a href="#">Saldo TASI</a></p>
+                      <p class="card-text"><a href="#">Concerto gratuito piazza XX Settembre</a></p>
+                      <p class="card-text"><a href="#">Convocazione Consiglio Comunale - Prima seduta</a></p>
+                      <p class="card-text"><a href="#">Seconda rata TARI</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div></div><div class="owl-item" style="width: 219.25px;"><div class="it-single-slide-wrapper">
+                <div class="card-wrapper">
+                  <div class="card card-bg">
+                    <div class="card-body">
+                      <h5 class="card-title">22<span>lun</span></h5>
+                      <p class="card-text"><a href="#">Saldo TASI</a></p>
+                      <p class="card-text"><a href="#">Concerto gratuito piazza XX Settembre</a></p>
+                      <p class="card-text"><a href="#">Convocazione Consiglio Comunale - Prima seduta</a></p>
+                      <p class="card-text"><a href="#">Seconda rata TARI</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div></div><div class="owl-item" style="width: 219.25px;"><div class="it-single-slide-wrapper">
+                <div class="card-wrapper">
+                  <div class="card card-bg">
+                    <div class="card-body">
+                      <h5 class="card-title">23<span>mar</span></h5>
+                      <p class="card-text"><a href="#">Saldo TASI</a></p>
+                      <p class="card-text"><a href="#">Concerto gratuito piazza XX Settembre</a></p>
+                      <p class="card-text"><a href="#">Convocazione Consiglio Comunale - Prima seduta</a></p>
+                      <p class="card-text"><a href="#">Seconda rata TARI</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div></div></div></div><div class="owl-nav disabled"><button class="owl-prev"></button><button class="owl-next"></button></div><div class="owl-dots"><button role="button" class="owl-dot active" aria-labelledby="owl-dot-0"><span></span></button><button role="button" class="owl-dot" aria-labelledby="owl-dot-1"><span></span></button><button role="button" class="owl-dot" aria-labelledby="owl-dot-2"><span></span></button></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
