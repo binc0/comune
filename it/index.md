@@ -8,6 +8,8 @@ permalink: /
 order: 1
 ---
 
+{% include allerta-meteo.html %}
+
 {% include home-evidenza.html %}
 
 {% include home-novita.html %}
