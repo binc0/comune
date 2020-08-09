@@ -1,36 +1,69 @@
 {% assign posts = site.posts | where: "lang", page.lang %}
 <section id="home-novita">
                     <div class="container">
-                        <div class="mt-88n">
-							<div class="widget">
-								<div> 
-									<div class="row row-eq-height">
-                                        {% for post in posts limit:3 %}
-										<div class="col-md-4">
-											<article class="scheda scheda-round">
-												<div class="scheda-icona-small">
-													<a href="#" title="Vai alla pagina: Comunicati stampa" class="">
-														<svg class="icon">
-															<use xlink:href="{{ site.baseurl }}/assets/img/ponmetroca.svg#ca-today"></use>
-														</svg>
-														{{ category }}
-													</a>
-												</div>
-												<div class="scheda-testo-small">
-													<h4><a href="#" title="Vai alla pagina: L'ITS Città Metropolitana ha avviato una procedura di selezione">{{ post.title }}</a></h4>
-													<p>{{ post.excerpt }}</p>
-												</div>
-												<div class="scheda-footer">
-													<a href="novita.html" title="Vai alla pagina: Novità" class="tutte">Tutte le novità
-														<svg class="icon"><use xlink:href="{{ site.baseurl }}/assets/img/ponmetroca.svg#ca-arrow_forward"></use></svg>
-													</a>
-												</div>
-											</article>
-										</div>
-                                        {% endfor %}
-									</div>
-								</div>
-							</div>
-						</div>
+                        <div class="row">
+          <div class="card-wrapper card-overlapping card-teaser-wrapper card-teaser-wrapper-equal card-teaser-block-3">
+              {% for post in posts limit:1 | where: "category", "giunta-consiglio" %}
+            <div class="card card-teaser no-after rounded shadow">
+              <div class="card-body pb-5">
+                <div class="category-top">
+                  <svg class="icon">
+                    <use xlink:href="{{ site.baseurl }}/assets/bootstrap-italia/dist/svg/sprite.svg#it-pa"></use>
+                  </svg>
+                  <a class="category" href="#">Giunta e Consiglio</a>
+                </div>
+                <p class="card-title font-weight-semibold"><a href="#" title="Vai alla pagina: {{ post.title }}">{{ post.title }}</a></p>
+                <p class="card-text">{{ post.excerpt }}</p>
+              </div>
+              <a class="read-more" href="#">
+                <span class="text">Notizie dall'amministrazione</span>
+                <svg class="icon">
+                  <use xlink:href="{{ site.baseurl }}/assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+              {% endfor %}
+              {% for post in posts limit:1 | where: "category", "pagamenti" %}
+            <div class="card card-teaser no-after rounded shadow">
+              <div class="card-body pb-5">
+                <div class="category-top">
+                  <svg class="icon">
+                    <use xlink:href="{{ site.baseurl }}/assets/bootstrap-italia/dist/svg/sprite.svg#it-pa"></use>
+                  </svg>
+                  <a class="category" href="#">Pagamenti</a>
+                </div>
+                <p class="card-title font-weight-semibold"><a href="#" title="Vai alla pagina: {{ post.title }}">{{ post.title }}</a></p>
+                <p class="card-text">{{ post.excerpt }}</p>
+              </div>
+              <a class="read-more" href="#">
+                <span class="text">Scadenze pagamenti</span>
+                <svg class="icon">
+                  <use xlink:href="{{ site.baseurl }}/assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+              {% endfor %}
+              {% for post in posts limit:1 | where: "category", "bandi" %}
+            <div class="card card-teaser no-after rounded shadow">
+              <div class="card-body pb-5">
+                <div class="category-top">
+                  <svg class="icon">
+                    <use xlink:href="{{ site.baseurl }}/assets/bootstrap-italia/dist/svg/sprite.svg#it-pa"></use>
+                  </svg>
+                  <a class="category" href="#">Bandi</a>
+                </div>
+                <p class="card-title font-weight-semibold"><a href="#" title="Vai alla pagina: {{ post.title }}">{{ post.title }}</a></p>
+                <p class="card-text">{{ post.excerpt }}</p>
+              </div>
+              <a class="read-more" href="#">
+                <span class="text">Tutti i bandi</span>
+                <svg class="icon">
+                  <use xlink:href="{{ site.baseurl }}/assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+              {% endfor %}
+          </div>
+        </div>
 	                </div>
 				</section>
