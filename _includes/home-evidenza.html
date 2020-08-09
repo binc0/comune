@@ -12,7 +12,7 @@
             <div class="card-body pb-5">
               <div class="category-top">
                 <svg class="icon">
-                  <use xlink:href="/{{ site.baseurl }}/assets//bootstrap-italia/dist/svg/sprite.svg#it-calendar"></use>
+                  <use xlink:href="{{ site.baseurl }}/assets//bootstrap-italia/dist/svg/sprite.svg#it-calendar"></use>
                 </svg>
                 <a class="category" href="/notizie">Notizie</a>
                 <span class="data">{% include date.html date=post.date %}</span>
@@ -20,12 +20,12 @@
               <h1 class="h4 card-title">{{ post.title }}</h1>
               <p class="card-text">{{ post.excerpt }}</p>
               <div class="chip chip-simple chip-primary">
-                <a href="#" class="chip-label">Estate in città</a>
+                <a href="/persone/{{ post.author }}" class="chip-label">{{ post.author }}</a>
               </div>
               <a class="read-more pb-3" href="/notizie">
                 <span class="text">Tutte le novità</span>
                 <svg class="icon">
-                  <use xlink:href="/{{ site.baseurl }}/assets//bootstrap-italia/dist/svg/sprite.svg##it-arrow-right"></use>
+                  <use xlink:href="{{ site.baseurl }}/assets//bootstrap-italia/dist/svg/sprite.svg##it-arrow-right"></use>
                 </svg>
               </a>
             </div>
