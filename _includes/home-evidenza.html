@@ -1,21 +1,37 @@
-<section id="novita_evidenza">
-					<article>
-						<div class="novita-foto img-fit-cover"> 
-							<img src="http://www.comune.spilimbergo.pn.it/fileadmin/slideshow_gif/Mosaico.gif" alt="Mosaico" />
-						</div>
-						<div class="novita-testo">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-6">
-										<h2><a href="#" title="Vai alla notizia: Cagliari SoloWomenRun: al via le iscrizioni all'edizione dei record">Il nuovo sito della Città del Mosaico</a></h2>
-										<p>È online il nuovo sito del comune di Spilimbergo</p>
-										<div class="argomenti">
-											<a href="#" title="Vai all'argomento: News" class="badge badge-pill badge-argomenti">News</a>
-										</div>
-										<a href="#" title="Vai alla pagina: Tutte le novità" class="tutte">Tutte le novità <svg class="icon"><use xlink:href="{{ site.baseurl }}/assets/img/ponmetroca.svg#ca-arrow_forward"></use></svg></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</article>
-				</section>
+{% assign posts = site.posts | where: "lang", page.lang % "category", "news"}
+
+<section id="head-section">
+    <div class="container">
+      <div class="row">
+          {% for post in posts limit:1 %}
+        <div class="col-lg-6 offset-lg-1 order-lg-2">
+          <img src="https://picsum.photos/800/600" title="img title" alt="imagealt" class="img-fluid">
+        </div>
+        <div class="col-lg-5 order-lg-1">
+          <div class="card">
+            <div class="card-body pb-5">
+              <div class="category-top">
+                <svg class="icon">
+                  <use xlink:href="/{{ site.baseurl }}/assets//bootstrap-italia/dist/svg/sprite.svg#it-calendar"></use>
+                </svg>
+                <a class="category" href="/notizie">Notizie</a>
+                <span class="data">{{ post.date }}8</span>
+              </div>
+              <h1 class="h4 card-title">{{ post.title }}</h1>
+              <p class="card-text">{{ post.excerpt }}</p>
+              <div class="chip chip-simple chip-primary">
+                <a href="#" class="chip-label">Estate in città</a>
+              </div>
+              <a class="read-more pb-3" href="/notizie">
+                <span class="text">Tutte le novità</span>
+                <svg class="icon">
+                  <use xlink:href="/{{ site.baseurl }}/assets//bootstrap-italia/dist/svg/sprite.svg##it-arrow-right"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+          {% endfor %}
+      </div>
+    </div>
+  </section>
