@@ -10,7 +10,7 @@ var settings = {
   "headers": {
     "Access-Control-Allow-Headers": "*",
     "Access-Control-Allow-Oringin": "https://binc0.github.io",
-    "Content-Type": "application/json"
+    "Content-Type": "application/jsonp"
   },
 }
 
