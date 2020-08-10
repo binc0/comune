@@ -5,7 +5,7 @@ title: Test post futuro
 lang: it
 excerpt: Questa è una breve descrizione dell'articolo scritto.
 ref: test-futuro
-image: https://picsum.photos/800/600
+image: https://i.picsum.photos/id/989/800/600.jpg?hmac=xmJM3kKbenimQ7wn65yNY7gp5lg9rN5MUjHFsSaqvlM
 category: [notizie]
 tags: [Test]
 ---
