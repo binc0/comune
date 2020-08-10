@@ -9,7 +9,6 @@ var settings = {
   "method": "GET",
   "headers": {
     "Access-Control-Allow-Headers": "*",
-    "Origin": " https://binc0.github.io",
     "Content-Type": "application/json"
   },
 }
