@@ -4,7 +4,7 @@ author: Binco
 title: Pagamento tari
 lang: it
 excerpt: Questa è una breve descrizione dell'articolo scritto.
-ref: tari
+ref: tari-2
 category: [pagamenti]
 tags: [Test]
 ---
