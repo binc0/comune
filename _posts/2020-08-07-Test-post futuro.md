@@ -5,6 +5,7 @@ title: Test post futuro
 lang: it
 excerpt: Questa è una breve descrizione dell'articolo scritto.
 ref: test-futuro
+image: https://picsum.photos/800/600
 category: [notizie]
 tags: [Test]
 ---
