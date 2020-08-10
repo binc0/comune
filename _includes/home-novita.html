@@ -1,13 +1,13 @@
-{% assign posts-1 = site.posts | where: "lang", page.lang | where: "category", "giunta-consiglio" %}
-{% assign posts-2 = site.posts | where: "lang", page.lang | where: "category", "pagamenti" %}
-{% assign posts-3 = site.posts | where: "lang", page.lang | where: "category", "bandi" %}
+{% assign giunta = site.posts | where: "lang", page.lang | where: "category", "giunta-consiglio" %}
+{% assign pagamenti = site.posts | where: "lang", page.lang | where: "category", "pagamenti" %}
+{% assign bandi = site.posts | where: "lang", page.lang | where: "category", "bandi" %}
 
 <section id="calendario">
     <div class="section section-muted pb-5 pt-0">
       <div class="container">
         <div class="row">
           <div class="card-wrapper card-overlapping card-teaser-wrapper card-teaser-wrapper-equal card-teaser-block-3">
-              {% for post in posts-1 limit:1 %}
+              {% for post in giunta limit:1 %}
             <div class="card card-teaser no-after rounded shadow">
               <div class="card-body pb-5">
                 <div class="category-top">
@@ -27,7 +27,7 @@
               </a>
             </div>
               {% endfor %}
-              {% for post in posts-2 limit:1 %}
+              {% for post in pagamaneti limit:1 %}
             <div class="card card-teaser no-after rounded shadow">
               <div class="card-body pb-5">
                 <div class="category-top">
@@ -47,7 +47,7 @@
               </a>
             </div>
               {% endfor %}
-              {% for post in posts-3 limit:1 %}
+              {% for post in bandi limit:1 %}
             <div class="card card-teaser no-after rounded shadow">
               <div class="card-body pb-5">
                 <div class="category-top">
