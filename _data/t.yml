@@ -43,7 +43,7 @@ social-links:
         whatsapp:
             name: "whatsapp"
             url: "https://binc0.github.io/comune/feed"
-        wifi:
+        rss:
             name: "wifi"
             url: "https://binc0.github.io/comune/feed"
             
