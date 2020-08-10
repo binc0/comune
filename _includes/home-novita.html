@@ -1,4 +1,4 @@
-{% assign giunta = site.posts | where: "lang", page.lang | where: "category", "giunta-consiglio" %}
+{% assign posts.giunta = site.posts | where: "lang", page.lang | where: "category", "giunta-consiglio" %}
 {% assign pagamenti = site.posts | where: "lang", page.lang | where: "category", "pagamenti" %}
 {% assign bandi = site.posts | where: "lang", page.lang | where: "category", "bandi" %}
 
@@ -7,7 +7,7 @@
       <div class="container">
         <div class="row">
           <div class="card-wrapper card-overlapping card-teaser-wrapper card-teaser-wrapper-equal card-teaser-block-3">
-              {% for post in giunta limit:1 %}
+              {% for post in posts.giunta limit:1 %}
             <div class="card card-teaser no-after rounded shadow">
               <div class="card-body pb-5">
                 <div class="category-top">
