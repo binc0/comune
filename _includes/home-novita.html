@@ -1,6 +1,6 @@
-{% assign posts.giunta = site.posts | where: "lang", page.lang | where: "category", "giunta-consiglio" %}
-{% assign posts.pagamenti = site.posts | where: "lang", page.lang | where: "category", "pagamenti" %}
-{% assign posts.bandi = site.posts | where: "lang", page.lang | where: "category", "bandi" %}
+{% assign posts.giunta = site.posts | where: "lang", page.lang %}
+{% assign posts.pagamenti = site.posts | where: "lang", page.lang %}
+{% assign posts.bandi = site.posts | where: "lang", page.lang %}
 
 <section id="calendario">
     <div class="section section-muted pb-5 pt-0">
