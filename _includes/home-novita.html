@@ -1,6 +1,6 @@
 {% assign posts.giunta = site.posts | where: "lang", page.lang | where: "category", "giunta-consiglio" %}
-{% assign pagamenti = site.posts | where: "lang", page.lang | where: "category", "pagamenti" %}
-{% assign bandi = site.posts | where: "lang", page.lang | where: "category", "bandi" %}
+{% assign posts.pagamenti = site.posts | where: "lang", page.lang | where: "category", "pagamenti" %}
+{% assign posts.bandi = site.posts | where: "lang", page.lang | where: "category", "bandi" %}
 
 <section id="calendario">
     <div class="section section-muted pb-5 pt-0">
@@ -27,7 +27,7 @@
               </a>
             </div>
               {% endfor %}
-              {% for post in pagamaneti limit:1 %}
+              {% for post in posts.pagamaneti limit:1 %}
             <div class="card card-teaser no-after rounded shadow">
               <div class="card-body pb-5">
                 <div class="category-top">
@@ -47,7 +47,7 @@
               </a>
             </div>
               {% endfor %}
-              {% for post in bandi limit:1 %}
+              {% for post in posts.bandi limit:1 %}
             <div class="card card-teaser no-after rounded shadow">
               <div class="card-body pb-5">
                 <div class="category-top">
