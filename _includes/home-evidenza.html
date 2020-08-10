@@ -17,7 +17,7 @@
                 <a class="category" href="/notizie">Notizie</a>
                 <span class="data">{% include date.html date=post.date %}</span>
               </div>
-              <h1 class="h4 card-title">{{ post.title }}</h1>
+              <h1 class="h4 card-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
               <p class="card-text">{{ post.excerpt }}</p>
               <div class="chip chip-simple chip-primary">
                 <a href="/persone/{{ post.author-slug }}" class="chip-label">{{ post.author }}</a>
