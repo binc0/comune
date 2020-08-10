@@ -6,12 +6,14 @@ var settings = {
   "async": true,
   "crossDomain": true,
   "url": "https://pianiemergenza.protezionecivile.fvg.it/api/alerts.json?test",
-  "contentType" : "josn",
   "method": "GET",
-  "Access-Control-Allow-Headers": "*",
+  "headers": {
+    "Access-Control-Allow-Headers": "*",
+    "Origin": " https://binc0.github.io",
+    "Content-Type": "application/json"
+  },
 }
 
-// Provincie che sono città mteropolitane
 
 
 $.ajax(settings).done(function (jcontent){
