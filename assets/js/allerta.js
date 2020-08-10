@@ -4,7 +4,7 @@
      
 
 
-$.getJSON('https://pianiemergenza.protezionecivile.fvg.it/api/alerts.json?test', function(jcontent) {
+$.getJSON('https://pianiemergenza.protezionecivile.fvg.it/api/alerts.json?test?callback=?', function(jcontent) {
     // JSON result in `data` variable
     
                
