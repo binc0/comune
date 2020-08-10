@@ -1,13 +1,13 @@
-{% assign posts.giunta = site.posts | where: "lang", page.lang %}
-{% assign posts.pagamenti = site.posts | where: "lang", page.lang %}
-{% assign posts.bandi = site.posts | where: "lang", page.lang %}
+{% assign posts-giunta = site.posts | where: "lang", page.lang %}
+{% assign posts-pagamenti = site.posts | where: "lang", page.lang %}
+{% assign posts-bandi = site.posts | where: "lang", page.lang %}
 
 <section id="calendario">
     <div class="section section-muted pb-5 pt-0">
       <div class="container">
         <div class="row">
           <div class="card-wrapper card-overlapping card-teaser-wrapper card-teaser-wrapper-equal card-teaser-block-3">
-              {% for post in posts.giunta limit:1 %}
+              {% for post in posts-giunta limit:1 %}
             <div class="card card-teaser no-after rounded shadow">
               <div class="card-body pb-5">
                 <div class="category-top">
@@ -27,7 +27,7 @@
               </a>
             </div>
               {% endfor %}
-              {% for post in posts.pagamaneti limit:1 %}
+              {% for post in posts-pagamaneti limit:1 %}
             <div class="card card-teaser no-after rounded shadow">
               <div class="card-body pb-5">
                 <div class="category-top">
@@ -47,7 +47,7 @@
               </a>
             </div>
               {% endfor %}
-              {% for post in posts.bandi limit:1 %}
+              {% for post in posts-bandi limit:1 %}
             <div class="card card-teaser no-after rounded shadow">
               <div class="card-body pb-5">
                 <div class="category-top">
