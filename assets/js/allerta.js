@@ -9,7 +9,7 @@ var settings = {
   "method": "GET",
   "headers": {
     "Access-Control-Allow-Headers": "*",
-    "Access-Control-Allow-Origin" : "https://binc0.github.io/comune/",
+    "Access-Control-Allow-Origin" : "https://pianiemergenza.protezionecivile.fvg.it",
     "Content-Type": "application/json"
   },
 }
