@@ -5,7 +5,6 @@ title: Pagamento tari
 lang: it
 excerpt: Questa è una breve descrizione dell'articolo scritto.
 ref: tari
-category: [pagamenti]
 tags: [Test]
 ---
 
