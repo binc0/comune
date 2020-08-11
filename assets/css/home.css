@@ -711,22 +711,7 @@
 
 $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
 
-#cosa-visitare {
-   display:flex;
-   flex-direction:row;
-   justify-content:center;
-   align-items:center;
-   overflow:hidden;
-   height:100vh;
-   
-   font-family: 'Roboto', sans-serif;
-   .credit {
-      position: absolute;
-      bottom:20px;
-      left:20px;
-      
-      color:#000;
-   }
+
    .options {
       display:flex;
       flex-direction:row;
@@ -867,4 +852,3 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
          }
       }
    }
-}
