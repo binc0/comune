@@ -14,7 +14,16 @@
           <div class="header-slim-right-zone">
             {% include header/header-lang-switch.html %}
             <div class="it-access-top-wrapper">
-              <a class="btn btn-primary btn-sm" href="https://servizi.regione.fvg.it/portale" type="button">Servizi online</a>
+                <a class="btn btn-primary btn-icon btn-full" href="https://servizi.regione.fvg.it/portale"
+                 title="Accedi all'area personale">
+                                <span class="rounded-icon">
+                  <svg class="icon icon-primary">
+                    <use
+                      xlink:href="{{ site.baseurl }}/assets/bootstrap-italia/dist/svg/sprite.svg#it-user"></use>
+                  </svg>
+                </span>
+                <span class="d-none d-lg-block">Accedi all'area personale</span>
+              </a>
             </div>
           </div>
         </div>
