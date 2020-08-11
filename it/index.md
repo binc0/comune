@@ -18,5 +18,7 @@ order: 1
 
 {% include argomenti-evidenza.html %}
 
+{% include cosa-visitare.html %}
+
 {% include siti-tematici.html %}
 
