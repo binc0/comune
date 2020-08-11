@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: notizie
 title: Notizie
 lang: it
 ref: notizie
