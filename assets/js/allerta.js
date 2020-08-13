@@ -4,7 +4,6 @@
      
 var settings = {
   "async": true,
-  "crossDomain": true,
   "url": "https://pianiemergenza.protezionecivile.fvg.it/api/alerts.jsonp?test=3",
   "method": "GET",
   "headers": {
