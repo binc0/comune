@@ -1,4 +1,6 @@
-
+$.getJSON('https://pianiemergenza.protezionecivile.fvg.it/api/alerts.json', function(data) {
+    console.log(data)
+});
  
      var allerta = document.getElementById("allerta");
      
