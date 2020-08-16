@@ -3,13 +3,7 @@ var allerta = document.getElementById("allerta");
 
 var settings = {
   "url": "https://binco.me/test",
-  "method": "GET",
-  "timeout": 0,
-  "headers": {
-    "Access-Control-Allow-Headers": "https://binc0.github.io",
-    "Content-Type": "application/json",
-    "Access-Control-Allow-Oringin": "https://binc0.github.io"
-  },
+  "method": "GET"
 };
 
 $.ajax(settings).done(function (data) {
