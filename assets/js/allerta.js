@@ -6,8 +6,7 @@ var settings = {
   "method": "GET",
   "timeout": 0,
   "headers": {
-    "Access-Control-Allow-Headers": "*",
-    "Origin": "https://binc0.github.io",
+    "Access-Control-Allow-Headers": "https://binc0.github.io",
     "Content-Type": "application/json",
     "Access-Control-Allow-Oringin": "https://binc0.github.io"
   },
