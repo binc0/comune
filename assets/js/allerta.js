@@ -2,7 +2,7 @@ var allerta = document.getElementById("allerta");
 
 
 var settings = {
-  "url": "https://binc0.github.io/comune/allerta.php",
+  "url": "https://binco.me/test",
   "method": "GET",
   "timeout": 0,
   "headers": {
