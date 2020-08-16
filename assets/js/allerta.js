@@ -2,7 +2,7 @@ var allerta = document.getElementById("allerta");
 
 
 var settings = {
-  "url": "https://pianiemergenza.protezionecivile.fvg.it/api/alerts.json",
+  "url": "https://binc0.github.io/allerta.php",
   "method": "GET",
   "timeout": 0,
   "headers": {
