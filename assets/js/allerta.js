@@ -17,7 +17,8 @@ $.ajax(settings).done(function (data) {
 
     function closecookie(){
         $.ajax(settings).done(function (data) {
-            document.cookie = "closecookie=true;  path=/";
+            console.log(data[0].dt_end);
+            document.cookie = "closecookie=true; expires=' + data[0].dt_end + '; path=/";
     
 
 });
