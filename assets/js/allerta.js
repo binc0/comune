@@ -20,7 +20,7 @@ var settings = {
   "url": "https://binco.me/test/",
   "method": "GET"
 };
-    if (getCookie("closecookie") == true) {
+    if (getCookie("closecookie") !== true) {
         $.ajax(settings).done(function (data) {
 
     if (data[0].level >= 0) {
