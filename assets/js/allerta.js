@@ -15,7 +15,7 @@ function getCookie(cname) {
   }
   return "";
 }
-console.log((getCookie("closecookie"));
+console.log(getCookie("closecookie"));
 var settings = {
   "url": "https://binco.me/test/",
   "method": "GET"
