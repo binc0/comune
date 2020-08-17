@@ -2,7 +2,7 @@ var allerta = document.getElementById("allerta");
 
 
 var settings = {
-  "url": "https://binco.me/test",
+  "url": "https://binco.me/test/",
   "method": "GET"
 };
 
