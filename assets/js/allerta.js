@@ -30,6 +30,10 @@ var settings = {
 
 function closecookie(){
         $.ajax(settings).done(function (data) {
+            var now = new Date();
+               var minutes = 30;
+               now.setTime(now.getTime() + (minutes * 60 * 1000));
+            console.log(now.toUTCString());
             console.log(data[0].dt_end);
             data_fine = data[0].dt_end;
             document.cookie += 'allerta=true; expires=' + data_fine + '; path=/';
