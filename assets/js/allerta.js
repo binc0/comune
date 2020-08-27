@@ -33,5 +33,6 @@ function closecookie(){
             console.log(data[0].dt_end);
             data_fine = data[0].dt_end;
             document.cookie += 'allerta=true; expires=' + data_fine + '; path=/';
+            document.cookie = "expires=" + now.toUTCString() + ";"
     });
     }
