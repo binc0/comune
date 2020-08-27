@@ -31,7 +31,7 @@ var settings = {
 
 function closecookie(){
         $.ajax(settings).done(function (data) {
-            console.log(data[0].dt_end);
             document.cookie += 'closecookie=true; expires=' + data[0].dt_end + '; path=/';
+            console.log(document.cookie);
     });
     }
