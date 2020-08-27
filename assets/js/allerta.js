@@ -31,7 +31,7 @@ var settings = {
 
 function closecookie(){
         $.ajax(settings).done(function (data) {
-            console.log(date.toUTCString(data[0].dt_end));
+            console.log(data[0].dt_end.toUTCString());
             document.cookie += 'closecookie=true; expires=' + data[0].dt_end + '; path=/';
     });
     }
