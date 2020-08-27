@@ -16,7 +16,7 @@ function getCookie(cname) {
   return "";
 }
 var settings = {
-  "url": "https://binco.me/test/",
+  "url": "https://allerta.binco.me",
   "method": "GET"
 };
     if (getCookie("allerta") != "true") {
