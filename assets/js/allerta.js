@@ -30,7 +30,6 @@ var settings = {
 
 function closecookie(){
         $.ajax(settings).done(function (data) {
-            document.cookie += '' + data[0].title + '=true; expires=' + new Date(data[0].dt_end) + '; path=/';
-            alert('' + data[0].title + '=true; expires=' + new Date(data[0].dt_end) + '; path=/');
+            document.cookie = "" + data[0].title + "=true; expires=" + new Date(data[0].dt_end) + "; path=/";
     });
     }
