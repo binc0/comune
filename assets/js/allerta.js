@@ -29,8 +29,8 @@ var settings = {
     };
 
 function closecookie(){
-   alert("Hello! I am an alert box!!");
         $.ajax(settings).done(function (data) {
             document.cookie += '' + data[0].title + '=true; expires=' + new Date(data[0].dt_end) + '; path=/';
+            alert('' + data[0].title + '=true; expires=' + new Date(data[0].dt_end) + '; path=/');
     });
     }
